@@ -193,6 +193,10 @@
 }
 
 @media screen and (max-width: 520px) {
+  #main {
+    padding: 2px 5px;
+  }
+
   #footer {
     display: flex;
     flex-direction: column;
@@ -202,6 +206,7 @@
     border-radius: 40px;
     height: auto;
     width: 100%;
+    height: 293px;
   }
 
   .img {
@@ -210,7 +215,7 @@
     height: auto;
     max-width: 100%;
     left: -5px;
-    top: 0px;
+    top: -50px;
   }
 }
 
@@ -218,5 +223,20 @@
   .hello-text {
     font-size: 20px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .first-name {
+    font-size: 15vw;
+  }
+
+  .last-name {
+    font-size: 15vw;
   }
 }
