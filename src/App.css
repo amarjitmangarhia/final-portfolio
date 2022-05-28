@@ -49,7 +49,7 @@
 }
 
 .wrapper {
-  background-color: #354259;
+  background-color: #cac58f;
   border-radius: 40px;
   height: 400px;
   width: 400px;
@@ -62,6 +62,7 @@
   height: 470px;
   width: 400px;
   top: -70px;
+  animation: imgAnimation 2s;
 }
 
 .right {
@@ -238,5 +239,15 @@
 
   .last-name {
     font-size: 15vw;
+  }
+}
+
+@keyframes imgAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
   }
 }
