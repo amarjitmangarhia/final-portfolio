@@ -61,6 +61,17 @@ a {
 }
 
 .svgHamburger {
+  transition: 0.2s;
+  position: absolute;
+  right: 12px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+.svgClose {
+  transition: 0.2s;
   position: absolute;
   right: 12px;
   color: white;
@@ -72,7 +83,13 @@ a {
 .hello-text {
   font-size: 30px;
   font-weight: 700;
-  width: 50%;
+  animation-name: headShake;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+}
+
+.hello-text:hover {
+  cursor: pointer;
 }
 
 .nav-items {
@@ -86,6 +103,13 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  transition: 0.2s;
+}
+
+.nav-items:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: #d9d9d9;
 }
 
 #main {
@@ -132,6 +156,9 @@ a {
   line-height: 50px;
   display: flex;
   justify-content: flex-end;
+  animation-name: headShake;
+  animation-duration: 1s;
+  animation-delay: 3s;
 }
 
 .last-name {
@@ -206,6 +233,10 @@ a {
   }
 
   .svgHamburger {
+    display: block;
+  }
+
+  .svgClose {
     display: block;
   }
 
