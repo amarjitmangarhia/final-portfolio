@@ -21,7 +21,8 @@ a {
   transition: 0.5s;
   overflow: hidden;
   top: 49px;
-  height: 91vh;
+  /* height: 91vh; */
+  height: 300px;
   z-index: 1;
   background-color: #3542599c;
 }
