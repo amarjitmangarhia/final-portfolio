@@ -3,15 +3,15 @@ import { useState } from "react";
 import "./App.css";
 import myImg from "./img/finallll.png";
 function App() {
-  const [first, setfirst] = useState(true);
+  const [first, setfirst] = useState(false);
 
-  const onClickHandler = (event) => {
+  const onClickHandler = () => {
     setfirst((prevSate) => !prevSate);
   };
   return (
     <div>
       <div className="container">
-        <div className={first ? "left-navbar" : "left-navbar df"}>
+        <div className={!first ? "left-navbar" : "left-navbar df"}>
           <div className="left-nav-items">
             <a href="google.com">Home</a>
           </div>
