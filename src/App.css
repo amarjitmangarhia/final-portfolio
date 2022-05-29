@@ -13,15 +13,15 @@ a {
 }
 
 .left-navbar {
-  transition: 0.5s;
-  width: 0px;
   position: absolute;
-  overflow: hidden;
-  top: 49px;
-  height: 91vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+  top: 49px;
+  height: 91vh;
   z-index: 1;
   background-color: #3542599c;
 }
@@ -156,11 +156,11 @@ a {
   font-size: 12px;
 }
 
-@media screen and (min-width: 991px) {
+/* @media screen and (min-width: 991px) {
   .left-navbar {
-    display: none;
+    width: 0px;
   }
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .wrapper {
@@ -254,14 +254,6 @@ a {
 }
 
 @media screen and (max-width: 520px) {
-  .left-navbar {
-    width: 100%;
-  }
-
-  .df {
-    width: 0px;
-  }
-
   #main {
     padding: 2px 5px;
   }

@@ -8,10 +8,16 @@ function App() {
   const onClickHandler = () => {
     setfirst((prevSate) => !prevSate);
   };
+
+  let content = "left-navbar";
+  if (!first) {
+    content = "left-navbar df";
+  }
+
   return (
     <div>
       <div className="container">
-        <div className={!first ? "left-navbar" : "left-navbar df"}>
+        <div className={content}>
           <div className="left-nav-items">
             <a href="google.com">Home</a>
           </div>
