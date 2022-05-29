@@ -3,14 +3,17 @@ import { useState } from "react";
 import "./App.css";
 import myImg from "./img/finallll.png";
 function App() {
-  const [first, setfirst] = useState(false);
+  const [first, setfirst] = useState(true);
 
   const onClickHandler = () => {
-    setfirst((prevSate) => !prevSate);
+    setfirst((prevState) => !prevState);
   };
 
-  let content = "left-navbar";
-  if (!first) {
+  let content = "";
+
+  if (first) {
+    content = "left-navbar";
+  } else {
     content = "left-navbar df";
   }
 
