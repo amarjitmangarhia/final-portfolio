@@ -16,15 +16,19 @@ a {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   width: 0px;
   transition: 0.5s;
   overflow: hidden;
-  top: 49px;
-  height: 300px;
+  /* top: 49px; */
+  top: 0;
+  /* height: 300px; */
+  height: 100vh;
   z-index: 1;
   background-color: #3542599c;
-  border-radius: 0 0 20px 0;
+  /* border-radius: 0 0 20px 0; */
+  border-radius: 20px;
 }
 
 .df {
@@ -39,7 +43,8 @@ a {
   background-color: white;
   border-radius: 8px;
   font-weight: 700;
-  margin: 0 10px;
+  /* margin: 0 10px; */
+  margin: 10px;
 }
 
 #header {
@@ -49,6 +54,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 2px 20px;
+  z-index: 1;
 }
 
 .navbar {
@@ -180,6 +186,13 @@ a {
 
   .last-name {
     font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .left-navbar {
+    /* display: none; */
+    width: 0px;
   }
 }
 
