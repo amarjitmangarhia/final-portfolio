@@ -1,0 +1,41 @@
+.leftNavItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.leftNavbar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  background-color: #3542599c;
+}
+
+.df {
+  width: 250px;
+}
+
+@media screen and (min-width: 991px) {
+  .leftNavbar {
+    /* display: none; */
+    width: 0px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .df {
+    width: 100%;
+  }
+}
