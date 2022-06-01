@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 import "./App.css";
-import Footer from "./components/footer/Footer";
+import About from "./components/About/About";
+// import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import LeftSideMenu from "./components/header/LeftSideMenu/LeftSideMenu";
 import Main from "./components/main/Main";
@@ -21,7 +22,8 @@ function App() {
         <LeftSideMenu showHamburger={showHamburger} />
         <Header showClose={showClose} onClickHandler={onClickHandler} />
         <Main />
-        <Footer />
+        <About />
+        {/* <Footer /> */}
       </div>
     </div>
   );

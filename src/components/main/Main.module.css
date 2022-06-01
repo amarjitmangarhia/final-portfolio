@@ -1,34 +1,16 @@
 .main {
+  margin: 80px 0;
   padding: 10px 60px;
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.left {
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-.wrapper {
-  background-color: #cac58f;
-  border-radius: 40px;
-  height: 400px;
-  width: 400px;
-  position: relative;
 }
 
 .img {
-  position: absolute;
-  object-fit: cover;
-  height: 470px;
+  position: relative;
   width: 400px;
-  top: -70px;
-  animation: imgAnimation 2s;
-  animation-timing-function: ease-in-out;
+  height: auto;
+  border-radius: 0 0 300px 300px;
 }
 
 .right {
@@ -42,9 +24,6 @@
   line-height: 50px;
   display: flex;
   justify-content: flex-end;
-  animation-name: headShake;
-  animation-duration: 1s;
-  animation-delay: 3s;
 }
 
 .lastName {
@@ -56,16 +35,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .wrapper {
-    height: 300px;
-    width: 300px;
-  }
-
-  .img {
-    height: 370px;
-    width: 300px;
-  }
-
   .firstName {
     font-size: 4rem;
   }
@@ -76,16 +45,8 @@
 }
 
 @media screen and (max-width: 991px) {
-  .wrapper {
-    height: 250px;
-    width: 250px;
-  }
-
   .img {
-    height: 270px;
-    width: 200px;
-    top: -20px;
-    left: 10px;
+    width: 300px;
   }
 
   .firstName {
@@ -99,75 +60,29 @@
 
 @media screen and (max-width: 767px) {
   .main {
-    display: flex;
     flex-direction: column;
+    margin: 10px 0;
   }
 
   .left {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .wrapper {
-    border-radius: 40px;
-    height: 350px;
-    width: 350px;
-    position: relative;
-  }
-
-  .img {
-    position: absolute;
-    object-fit: cover;
-    height: 410px;
-    width: 300px;
-    top: -60px;
+    margin-top: 20px;
   }
 
   .right {
-    flex: auto;
     margin: 50px 0px;
-    width: 100%;
   }
 
   .firstName {
     line-height: 28px;
     justify-content: center;
   }
-
-  .lastName {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .main {
-    padding: 2px 5px;
-  }
-
-  .wrapper {
-    border-radius: 40px;
-    height: auto;
-    width: 100%;
-    height: 293px;
-  }
-
-  .img {
-    position: relative;
-    object-fit: cover;
-    height: auto;
-    max-width: 100%;
-    left: -5px;
-    top: -50px;
-  }
 }
 
 @media screen and (max-width: 315px) {
-  .wrapper {
-    max-width: 100%;
-    height: auto;
+  .img {
+    width: 100%;
+    min-width: 250px;
   }
-
   .firstName {
     font-size: 15vw;
   }
