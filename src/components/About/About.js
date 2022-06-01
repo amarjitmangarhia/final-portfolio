@@ -9,7 +9,9 @@ const About = () => {
       <div className={classes.about}>
         <div className="container">
           <div className={classes.left}>
-            <div className={classes.header}>Who Am I</div>
+            <div className={classes.header}>
+              Who Am I<span> ?</span>
+            </div>
             <div className={classes.desc}>
               Amarjit, A Computer Science Graduate.
               <br />

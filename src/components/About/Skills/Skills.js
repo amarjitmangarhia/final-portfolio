@@ -6,7 +6,9 @@ const Skills = () => {
   return (
     <div className="container">
       <div className={classes.right}>
-        <div className={classes.rightNav}>Skills I Have</div>
+        <div className={classes.rightNav}>
+          <p>Skills I Have</p>
+        </div>
         <div className={classes.image}>
           <img className={classes.img} src={boyToy} alt="myImage" />
         </div>
