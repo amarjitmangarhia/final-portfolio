@@ -60,21 +60,19 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #5b6069;
   color: white;
-  padding-bottom: 20px;
 }
 
 .rightNav {
-  background-color: #404246;
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.9rem;
-  font-weight: 800;
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .image {
@@ -85,10 +83,12 @@
 
 .right .img {
   display: block;
-  width: 250px;
-  min-width: 10px;
-  max-width: 250px;
+  width: 400px;
+  min-width: 250px;
+  max-width: 220px;
   height: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .skills {
@@ -101,23 +101,22 @@
 
 .skill {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: rgba(60, 203, 169, 0.858);
+  color: black;
   width: auto;
   margin: 10px 10px;
-  padding: 05px 10px;
+  padding: 5px 10px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: lowercase;
 }
 
 @media screen and (max-width: 1200px) {
   .right .img {
     display: block;
-    padding: 20px;
-    width: 250px;
-    min-width: 10px;
+    width: 240px;
+    min-width: 50px;
     height: auto;
-    margin-top: 0rem;
   }
 
   .wheelChair {
@@ -129,13 +128,15 @@
 }
 
 @media screen and (max-width: 991px) {
-  .header {
+  .header,
+  .rightNav {
     font-size: 3rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .header {
+  .header,
+  .rightNav {
     font-size: 2rem;
   }
 
@@ -159,14 +160,6 @@
   .left {
     width: 100%;
   }
-
-  .right .img {
-    display: block;
-    width: 300px;
-    min-width: 10px;
-    max-width: 300px;
-    height: auto;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -176,7 +169,8 @@
     padding: 0;
   }
 
-  .left .header {
+  .left .header,
+  .rightNav {
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
@@ -197,7 +191,9 @@
   }
 
   .right .img {
+    display: block;
     width: 100%;
-    min-width: 10px;
+    min-width: 50px;
+    height: auto;
   }
 }
