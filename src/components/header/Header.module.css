@@ -6,6 +6,8 @@
   align-items: center;
   padding: 2px 20px;
   z-index: 1;
+  position: relative;
+  transition: 0.5s;
 }
 
 .helloText {

@@ -5,6 +5,8 @@
   justify-content: center;
   background-color: #5b6069;
   color: white;
+  height: 100vh;
+  transition: 0.5s;
 }
 
 .rightNav {

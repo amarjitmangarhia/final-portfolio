@@ -1,9 +1,12 @@
-import React from "react";
 import classes from "./Header.module.css";
+import React, { UserContext } from "../../App";
 import list from "../../img/list.svg";
 import xSquare from "../../img/x-square.svg";
+import { useContext } from "react";
 const Header = (props) => {
   let hamburgerClose = "";
+
+  const value = useContext(UserContext);
 
   if (!props.showClose) {
     hamburgerClose = (
@@ -26,7 +29,10 @@ const Header = (props) => {
   }
 
   return (
-    <header className={classes.header}>
+    <header
+      style={{ backgroundColor: value ? "#000000" : "" }}
+      className={classes.header}
+    >
       <div className={classes.helloText}>Hello I Am</div>
       <div className={classes.navbar}>
         <div className={classes.navItems}>Home</div>
