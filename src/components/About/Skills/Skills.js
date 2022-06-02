@@ -4,6 +4,19 @@ import classes from "./Skills.module.css";
 import boyToy from "../../../img/boyToy.svg";
 
 const Skills = () => {
+  const styles = {
+    backgroundColor: "#000000",
+    border: " 1px solid",
+    color: "#E1E1E1",
+    hover: "red",
+  };
+
+  const noStyles = {
+    backgroundColor: "",
+    border: "",
+    color: "",
+  };
+
   const value = useContext(UserContext);
   return (
     <div
@@ -17,12 +30,24 @@ const Skills = () => {
         <img className={classes.img} src={boyToy} alt="myImage" />
       </div>
       <div className={classes.skills}>
-        <div className={classes.skill}>HTML</div>
-        <div className={classes.skill}>CSS</div>
-        <div className={classes.skill}>JAVASCRIPT</div>
-        <div className={classes.skill}>NODE JS</div>
-        <div className={classes.skill}>REACT</div>
-        <div className={classes.skill}>UI/UX</div>
+        <div style={value ? styles : noStyles} className={classes.skill}>
+          HTML
+        </div>
+        <div style={value ? styles : noStyles} className={classes.skill}>
+          CSS
+        </div>
+        <div style={value ? styles : noStyles} className={classes.skill}>
+          JAVASCRIPT
+        </div>
+        <div style={value ? styles : noStyles} className={classes.skill}>
+          NODE JS
+        </div>
+        <div style={value ? styles : noStyles} className={classes.skill}>
+          REACT
+        </div>
+        <div style={value ? styles : noStyles} className={classes.skill}>
+          UI/UX
+        </div>
       </div>
     </div>
   );

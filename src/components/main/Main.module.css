@@ -10,15 +10,16 @@
   transition: 0.5s;
 }
 
+.left,
+.right {
+  flex: 1;
+}
+
 .img {
   position: relative;
   width: 400px;
   height: auto;
   border-radius: 0 0 300px 300px;
-}
-
-.right {
-  flex: 1;
 }
 
 .firstName {

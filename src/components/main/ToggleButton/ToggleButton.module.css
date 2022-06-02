@@ -1,7 +1,8 @@
 .toggleButton {
   position: fixed;
-  right: 125px;
-  top: 70px;
+  right: 30px;
+  top: auto;
+  bottom: 30px;
   width: 60px;
   height: 30px;
   background-color: black;
@@ -33,10 +34,20 @@
   transition: 1s;
 }
 
+@media screen and (max-width: 1300px) {
+  .toggleButton {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .toggleButton {
+    right: 60px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .toggleButton {
     right: 30px;
-    top: auto;
-    bottom: 30px;
   }
 }
