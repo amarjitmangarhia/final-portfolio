@@ -31,3 +31,10 @@
   position: absolute;
   transition: 1s;
 }
+
+@media screen and (max-width: 500px) {
+  .toggleButton {
+    right: 12px;
+    top: 60px;
+  }
+}
