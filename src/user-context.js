@@ -9,7 +9,11 @@ const UserContext = createContext({
   headerBackgroundColor: "",
   LeftSideMenuBackgroundColor: "",
   toggleRightPosition: "",
+  state: false,
+  showCloseState: false,
+  showHamburgerState: true,
   onClickHandler: () => {},
+  changeThemeHandler: () => {},
 });
 
 export const UserContextProvider = (props) => {
