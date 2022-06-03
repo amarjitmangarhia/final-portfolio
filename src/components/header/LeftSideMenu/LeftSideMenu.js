@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { UserContext } from "../../../App";
+import UserContext from "../../../user-context";
 import classes from "./LeftSideMenu.module.css";
 
 const LeftSideMenu = (props) => {
@@ -7,7 +7,7 @@ const LeftSideMenu = (props) => {
 
   let leftNavbarClass = "";
 
-  if (props.showHamburger) {
+  if (ctx.showHamburgerState) {
     leftNavbarClass = classes.leftNavbar;
   } else {
     leftNavbarClass = `${classes.leftNavbar} ${classes.df}`;

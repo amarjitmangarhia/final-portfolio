@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import { UserContext } from "../../App";
+import UserContext from "../../user-context";
 import myImg from "../../img/image-fulll.png";
 import classes from "./Main.module.css";
 import ToggleButton from "./ToggleButton/ToggleButton";
+import LeftSideMenu from "../header/LeftSideMenu/LeftSideMenu";
 
 const Main = ({ setNightMode }) => {
   const ctx = useContext(UserContext);
-  console.log(ctx);
 
   return (
     <main
@@ -15,6 +15,7 @@ const Main = ({ setNightMode }) => {
       }}
       className={classes.main}
     >
+      <LeftSideMenu />
       <div className={classes.left}>
         <img className={classes.img} src={myImg} alt="myImage" />
       </div>
@@ -32,7 +33,7 @@ const Main = ({ setNightMode }) => {
           mangarhia
         </div>
       </div>
-      <ToggleButton setNightMode={setNightMode} />
+      <ToggleButton />
     </main>
   );
 };

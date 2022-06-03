@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { UserContext } from "../../../App";
+import UserContext from "../../../user-context";
 import classes from "./Skills.module.css";
 import boyToy from "../../../img/boyToy.svg";
 

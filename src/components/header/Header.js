@@ -1,5 +1,5 @@
 import classes from "./Header.module.css";
-import React, { UserContext } from "../../App";
+import UserContext from "../../user-context";
 import list from "../../img/list.svg";
 import xSquare from "../../img/x-square.svg";
 import { useContext } from "react";
@@ -8,13 +8,13 @@ const Header = (props) => {
 
   const ctx = useContext(UserContext);
 
-  if (!props.showClose) {
+  if (!ctx.showCloseState) {
     hamburgerClose = (
       <img
         src={list}
         alt="hamburger"
         className={classes.svgHamburger}
-        onClick={props.onClickHandler}
+        onClick={ctx.onClickHandler}
       />
     );
   } else {
@@ -23,7 +23,7 @@ const Header = (props) => {
         src={xSquare}
         alt="hamburger"
         className={classes.svgClose}
-        onClick={props.onClickHandler}
+        onClick={ctx.onClickHandler}
       />
     );
   }
