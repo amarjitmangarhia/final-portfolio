@@ -5,15 +5,15 @@ import wheelChair from "../../img/wheelChair.svg";
 import Skills from "./Skills/Skills";
 
 const About = () => {
-  const value = useContext(UserContext);
+  const ctx = useContext(UserContext);
 
   return (
     <div>
       <div className={classes.about}>
         <div
           style={{
-            backgroundColor: value ? "#141414" : "",
-            color: value ? "white" : "black",
+            backgroundColor: ctx.state ? ctx.aboutBackgroundColor : "",
+            color: ctx.state ? ctx.aboutColor : "black",
           }}
           className={classes.left}
         >

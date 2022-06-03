@@ -5,11 +5,14 @@ import classes from "./Main.module.css";
 import ToggleButton from "./ToggleButton/ToggleButton";
 
 const Main = ({ setNightMode }) => {
-  const value = useContext(UserContext);
+  const ctx = useContext(UserContext);
+  console.log(ctx);
 
   return (
     <main
-      style={{ backgroundColor: value ? "#1B1B1B" : "" }}
+      style={{
+        backgroundColor: ctx.state ? ctx.mainBackgroundColorOnNightMode : "",
+      }}
       className={classes.main}
     >
       <div className={classes.left}>
@@ -17,13 +20,13 @@ const Main = ({ setNightMode }) => {
       </div>
       <div className={classes.right}>
         <div
-          style={{ color: value ? "#f2aa4cff" : "" }}
+          style={{ color: ctx.state ? ctx.firstNameColorOnNightMode : "" }}
           className={classes.firstName}
         >
           amar
         </div>
         <div
-          style={{ color: value ? "#F3F3F3" : "" }}
+          style={{ color: ctx.state ? ctx.lastNameColorOnNightMode : "" }}
           className={classes.lastName}
         >
           mangarhia

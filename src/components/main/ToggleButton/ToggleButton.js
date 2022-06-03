@@ -5,7 +5,7 @@ import sun from "../../../img/sun.svg";
 import moon from "../../../img/moon.svg";
 
 const ToggleButton = ({ setNightMode }) => {
-  const value = useContext(UserContext);
+  const ctx = useContext(UserContext);
 
   const changeThemeHandler = () => {
     console.log("ok");
@@ -16,7 +16,7 @@ const ToggleButton = ({ setNightMode }) => {
     <div onClick={changeThemeHandler} className={classes.toggleButton}>
       <img className={classes.sun} src={sun} alt="" />
       <div
-        style={{ right: value ? "4px" : "" }}
+        style={{ right: ctx.state ? ctx.toggleRightPosition : "" }}
         className={classes.round}
       ></div>
       <img className={classes.moon} src={moon} alt="" />

@@ -117,3 +117,15 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 250px) {
+  .skill {
+    background-color: rgba(60, 203, 169, 0.858);
+    color: black;
+    width: auto;
+    margin: 10px 5px;
+    padding: 3px 8px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}

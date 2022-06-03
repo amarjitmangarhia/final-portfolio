@@ -6,7 +6,7 @@ import { useContext } from "react";
 const Header = (props) => {
   let hamburgerClose = "";
 
-  const value = useContext(UserContext);
+  const ctx = useContext(UserContext);
 
   if (!props.showClose) {
     hamburgerClose = (
@@ -30,7 +30,7 @@ const Header = (props) => {
 
   return (
     <header
-      style={{ backgroundColor: value ? "#000000" : "" }}
+      style={{ backgroundColor: ctx.state ? ctx.headerBackgroundColor : "" }}
       className={classes.header}
     >
       <div className={classes.helloText}>Hello I Am</div>

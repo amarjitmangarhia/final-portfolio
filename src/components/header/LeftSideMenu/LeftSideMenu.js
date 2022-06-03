@@ -3,7 +3,7 @@ import { UserContext } from "../../../App";
 import classes from "./LeftSideMenu.module.css";
 
 const LeftSideMenu = (props) => {
-  const value = useContext(UserContext);
+  const ctx = useContext(UserContext);
 
   let leftNavbarClass = "";
 
@@ -15,7 +15,9 @@ const LeftSideMenu = (props) => {
 
   return (
     <div
-      style={{ backgroundColor: value ? " #000000dd" : "" }}
+      style={{
+        backgroundColor: ctx.state ? ctx.LeftSideMenuBackgroundColor : "",
+      }}
       className={leftNavbarClass}
     >
       <div className={classes.leftNavItems}>
