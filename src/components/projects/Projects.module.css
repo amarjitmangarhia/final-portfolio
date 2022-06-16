@@ -1,0 +1,14 @@
+.work {
+  background-color: rgb(245, 219, 198);
+  color: black;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

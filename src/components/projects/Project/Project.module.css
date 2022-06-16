@@ -1,0 +1,62 @@
+.project {
+  width: 250px;
+  height: 250px;
+  border: 3px #20603e solid;
+  transition: 10s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.click {
+  position: absolute;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.804);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(23, 24, 24, 0.774);
+  color: white;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project:hover .click,
+.project:hover .text {
+  opacity: 1;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.project:hover .image {
+  opacity: 0.5;
+}
+
+.header {
+  font-weight: 600;
+}
